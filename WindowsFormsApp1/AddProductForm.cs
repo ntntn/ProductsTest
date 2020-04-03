@@ -39,20 +39,7 @@ namespace WindowsFormsApp1
             comboBox1.Hide();
             label2.Hide();
 
-            switch (status)
-            {
-                case Status.Recieved:
-                    product.Status = Status.Recieved;
-                    break;
-
-                case Status.Storage:
-                    product.Status = Status.Storage;
-                    break;
-
-                case Status.Sold:
-                    product.Status = Status.Sold;
-                    break;
-            }
+            product.status = status;
         }
 
         private void textBox1_TextChanged(object sender, EventArgs e)
