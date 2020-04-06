@@ -120,7 +120,6 @@
       <DependentUpon>SoldProductsForm.cs</DependentUpon>
     </Compile>
     <Compile Include="Status.cs" />
-    <Compile Include="StatusContext.cs" />
     <Compile Include="StorageProductsForm.cs">
       <SubType>Form</SubType>
     </Compile>

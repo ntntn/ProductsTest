@@ -73,7 +73,7 @@
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>/S2FJOIuzvHNgPZdtxtUKK8VCRmLvveYFYcox09iGoc=</dsig:DigestValue>
+        <dsig:DigestValue>JwiNH8xESHYNbX0gu7YpT52Ug6LPHdrd0FBZl6GO0V0=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
@@ -92,7 +92,7 @@
         <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
       </dsig:Transforms>
       <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-      <dsig:DigestValue>MGX7Zoqz41Z2LDcn0MxMBw5eNL3pcxMRnoxnU/X0ffg=</dsig:DigestValue>
+      <dsig:DigestValue>2/4+YI4RFmyd3+ey9E8kxUzeInCluexdIx/lEkMv0aQ=</dsig:DigestValue>
     </hash>
   </file>
   <file name="WindowsFormsApp1.ProductContext_log.ldf" size="8388608" writeableType="applicationData">
@@ -101,7 +101,7 @@
         <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
       </dsig:Transforms>
       <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-      <dsig:DigestValue>L0xEY0n8NxxQ7uRJ6xXZsB5Y0cQW41WTNIKerBOYre4=</dsig:DigestValue>
+      <dsig:DigestValue>Y/sQKYCBJStN87dB8r6CEM12yjb0WzJt5Kx72g1CKKQ=</dsig:DigestValue>
     </hash>
   </file>
 </asmv1:assembly>

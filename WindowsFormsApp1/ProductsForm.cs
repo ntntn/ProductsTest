@@ -91,6 +91,8 @@ namespace WindowsFormsApp1
                 db.Database.Delete();
                 db.SaveChanges();
             }
+
+            PopulateGridView();
         }
 
         private void button3_Click(object sender, EventArgs e)
