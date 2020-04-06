@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 
 namespace WindowsFormsApp1
 {
-    public enum Status
+    public enum StatusType
     {
         Recieved,
         Storage,
@@ -16,12 +16,8 @@ namespace WindowsFormsApp1
     }
     public class Product
     {
-        [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
+        [Key, DatabaseGenerated(DatabaseGeneratedOption.Identity)]
         public int ProductId { get; set; }
         public string Name { get; set; } 
-        public Status Status { get; set; }
-
-        [Column(TypeName = "Date")]
-        public DateTime Date { get; set; }
     }
 }

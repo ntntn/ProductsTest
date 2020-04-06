@@ -14,11 +14,23 @@ namespace WindowsFormsApp1
     {       
 
         Product product;
+        ProductRecord productRecord;
+
+        StatusType statusType;
+
         public Product Product
         {
             get
             {
                 return product;
+            }
+            protected set { }
+        }
+        public ProductRecord ProductRecord
+        {
+            get
+            {
+                return productRecord;
             }
             protected set { }
         }
@@ -28,43 +40,35 @@ namespace WindowsFormsApp1
             InitializeComponent();
 
             this.product = new Product();
-            comboBox1.DataSource = Enum.GetValues(typeof(Status));       
+            this.productRecord = new ProductRecord();
+
+            comboBox1.DataSource = Enum.GetValues(typeof(StatusType));       
         }
 
-        public AddProductForm(Status status)
+        public AddProductForm(StatusType statusType)
         {
             InitializeComponent();
 
             this.product = new Product();
+            this.productRecord = new ProductRecord();
             comboBox1.Hide();
             label2.Hide();
 
-            product.status = status;
+            this.statusType = statusType;
         }
 
-        private void textBox1_TextChanged(object sender, EventArgs e)
-        {
-            //product.ProductId = textBox1.Text;
-        }
-
-        private void textBox2_TextChanged(object sender, EventArgs e)
-        {
-            product.Name = textBox2.Text;
-        }
-
-        private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
-        {
-                
-        }
 
         private void comboBox1_DropDownClosed(object sender, EventArgs e)
         {
-            product.Status = (Status)comboBox1.SelectedItem;
+            statusType = (StatusType)comboBox1.SelectedItem; 
         }
 
         private void button1_Click(object sender, EventArgs e)
         {
-            product.Date = DateTime.Now;
+            product.Name = textBox2.Text;
+            productRecord.Date = DateTime.Now;
+            productRecord.ProductId = product.ProductId;
+            productRecord.StatusId = ProductContext.GetStatusIdByEnum(statusType);
         }
 
     }
